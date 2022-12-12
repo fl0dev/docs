@@ -1,2 +1,3 @@
 # Sequelize
 
+Coming soon
