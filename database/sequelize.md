@@ -1,3 +1,0 @@
-# Sequelize
-
-Coming soon
