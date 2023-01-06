@@ -5,3 +5,7 @@
   * [Setting Up a Project](getting-started/setting-up-a-project.md)
   * [Deploying To Development](getting-started/deploying-to-development.md)
   * [Running Endpoints](getting-started/running-endpoints.md)
+
+## How-tos
+
+* [How to Move Repositories](how-tos/how-to-move-repositories.md)
