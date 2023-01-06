@@ -1,12 +1,12 @@
 # How to Move Repositories
 
-If you need to move your Git repo between organizations, you will need to reconfigure FL0 so it can find the repo.
+If you need to move your Git repo between organizations, you will need to reconfigure FL0 so it can find the new repo.
 
 ### Considerations
 
 Before moving a repository it's important to understand the impact on your FL0 organization:
 
-1. A FL0 organisation can only be connected to one Github organization at a time
+1. A FL0 organization can only be connected to one Github organization at a time
 2. You cannot change the repository connected to a FL0 service, it must be deleted and recreated
 3. Deleting and recreating a service will involve downtime unless you run both alongside each other with different names
 4. While transferring the repository it will not be possible to push code changes to the Service from the point the repo is moved to the point the FL0 service is reconnected
