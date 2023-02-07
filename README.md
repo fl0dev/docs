@@ -20,9 +20,7 @@ Follow the steps in this guide to get your app up and running in minutes!
 [running-endpoints.md](getting-started/running-endpoints.md)
 {% endcontent-ref %}
 
-{% content-ref url="getting-started/connecting-to-a-database.md" %}
-[connecting-to-a-database.md](getting-started/connecting-to-a-database.md)
-{% endcontent-ref %}
+
 
 
 

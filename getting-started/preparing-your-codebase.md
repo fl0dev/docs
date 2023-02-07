@@ -8,7 +8,7 @@ Follow the steps in this guide to get your app deployed on FL0.
 
 ### Prerequisites
 
-1. A FL0 account ([sign up here](https://app.fl0.dev/account/sign-up))
+1. A FL0 account (request alpha access [here](https://fl0.com))
 2. A Github account
 3. A NodeJS repository
 
