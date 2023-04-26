@@ -47,7 +47,7 @@ https://{{app-name}}-{{unique-identifier}}-{{environment}}.fl0.co
 ```
 
 1. `{{app-name}}` is the name you chose when creating the app
-2. `{{unique-identified}}` is a randomly generated 4 character string
+2. `{{unique-identifier}}` is a randomly generated 4 character string
 3. `{{environment}}`  refers to the environment in which the app is deployed
    1. The same app will have a different URL in Development vs Production
 
