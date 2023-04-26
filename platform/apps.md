@@ -59,6 +59,10 @@ Once successfully deployed, you can access your app using the URL found on the *
 
 Environment variables are custom settings that can be passed into your app when FL0 builds and deploys it. These settings can have different values in Development and Production.
 
+{% hint style="info" %}
+Any changes to Environment Variables will require your app to be redeployed. After you edit an Environment Variable, trigger a manual deployment or push a commit for the changes to take effect.
+{% endhint %}
+
 For more information, see the [Dockerfile reference.](https://docs.docker.com/engine/reference/builder/#env)
 
 ### Viewing Logs
