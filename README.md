@@ -1,6 +1,6 @@
 # 🚀 Getting Started
 
-FL0 is a platform for automating the deployment Node.js apps. Just push code to your main branch and FL0 will build and deploy your app to a scalable, containerized infrastructure complete with Postgres database.
+FL0 is a platform for easily deploying your code as containers. Just push code to your repo  and FL0 will build and deploy your app to a fully managed infrastructure complete with  databases, logging, multiple environments and lots more!
 
 Follow the steps in this guide to get your app up and running in minutes!
 
@@ -12,15 +12,13 @@ Follow the steps in this guide to get your app up and running in minutes!
 [setting-up-a-project.md](getting-started/setting-up-a-project.md)
 {% endcontent-ref %}
 
-{% content-ref url="getting-started/deploying-to-development.md" %}
-[deploying-to-development.md](getting-started/deploying-to-development.md)
-{% endcontent-ref %}
-
 {% content-ref url="getting-started/running-endpoints.md" %}
 [running-endpoints.md](getting-started/running-endpoints.md)
 {% endcontent-ref %}
 
-
+{% content-ref url="getting-started/connecting-to-a-database.md" %}
+[connecting-to-a-database.md](getting-started/connecting-to-a-database.md)
+{% endcontent-ref %}
 
 
 

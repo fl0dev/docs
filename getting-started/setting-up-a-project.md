@@ -2,37 +2,30 @@
 
 ### Introduction
 
-A project in FL0 represents a collection of related services and resources. In FL0, services are the apps you deploy from code. Resources are supporting systems like databases, storage accounts, message queues and more.&#x20;
+A project in FL0 represents a collection of related apps and databases. In FL0, apps are containers created from your code. Databases can be created and deployed separately to apps.
 
 {% hint style="info" %}
-Currently FL0 supports single services within a Project. Multiple services will be possible in the near future.
-{% endhint %}
-
-{% hint style="info" %}
-Currently FL0 supports the Postgres database resource type. Additional resources are coming soon.
+Currently FL0 supports the Postgres database type. Additional databases are coming soon.
 {% endhint %}
 
 ### Prerequisites
 
 1. Admin permissions for your Github organization
 
-### Create a project
+### Creating a Project
 
-1. From inside your FL0 organization, click the "New Project" button&#x20;
-2. Give your project a name. This name will form part of your service URL
+1. From inside your FL0 Workspace, click the **New project** button and give it a name
+2. Give your project a name and save it
 
-Once a project has been added to your organization, it will have a URL in the format:
+### Add an App
 
-```
-https://{organization}.api.fl0.dev/{project}/{service}
-```
+1. From your newly created Project, click the **Add new** button and select **Deploy your app** from options shown
+2. Follow the prompts to [Connect your Github Account](../platform/workspaces.md#connecting-a-workspace-to-github) to FL0. You will need admin permissions to install the FL0 Github App
+3. Click the **Connect** button on the repository you wish to deploy
+4. Give your App a name. This name will form part of the URL
+5. Choose the **Development** environment for deployment
+6. Set up [Manual or Automatic Deployments](../platform/apps.md#automatic-vs-manual-deployments)
+7. Add any required [Environment Variables](../platform/apps.md#environment-variables)
 
-### Add a service
-
-1. From your newly created Project, click the "Add new" button and select "Service" from the dropdown list
-2. Follow the prompts to connect your Github account to FL0. You will need admin permissions to install the FL0 Github App
-3. Click the "Connect" button on the repository you wish to deploy
-4. Give your Service a name. This name will form part of the URL
-
-Once connected, FL0 will start building your Service from the latest commit to the `main` branch.&#x20;
+Once connected, FL0 will start building your App from the latest commit to the specified branch (automatic mode) or wait for a manual deployment to be made (manual mode).
 
