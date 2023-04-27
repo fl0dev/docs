@@ -14,4 +14,5 @@
 
 ## How-tos
 
+* [How to set up a Dockerfile](how-tos/how-to-set-up-a-dockerfile.md)
 * [How to Move Repositories](how-tos/how-to-move-repositories.md)
