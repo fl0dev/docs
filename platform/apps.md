@@ -43,7 +43,7 @@ See the section below on [Environment Variables](apps.md#environment-variables).
 Every app is given a unique URL that is comprised of the following elements:
 
 ```
-https://{{app-name}}-{{unique-identifier}}-{{environment}}.fl0.co
+https://{{app-name}}-{{unique-identifier}}-{{environment}}.fl0.io
 ```
 
 1. `{{app-name}}` is the name you chose when creating the app

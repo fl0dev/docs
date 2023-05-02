@@ -13,7 +13,7 @@ Once your codebase is deployed on FL0, you can access the endpoints it exposes u
 FL0 URLs are in the  following format:
 
 ```
-https://{{app-name}}-{{unique-identifier}}-{{environment}}.fl0.co
+https://{{app-name}}-{{unique-identifier}}-{{environment}}.fl0.io
 ```
 
 ### Run an Endpoint
