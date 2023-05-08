@@ -32,7 +32,7 @@ app.listen(port, () => {
 {% endtab %}
 
 {% tab title="Go" %}
-```
+```go
 package main
 
 import (
@@ -66,6 +66,26 @@ func main() {
 }
 ```
 {% endtab %}
+
+{% tab title="Python" %}
+{% code title="app.py" %}
+```python
+import os
+from flask import Flask
+
+app = Flask(__name__)
+
+port = int(os.environ.get("PORT", 5000))
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=port)
+```
+{% endcode %}
+{% endtab %}
 {% endtabs %}
 
 ### Include a Dockerfile
@@ -84,7 +104,7 @@ As long as you have a Dockerfile, FL0 can build Rust, Go, Python or any other la
 
 {% tabs %}
 {% tab title="Javascript" %}
-```
+```docker
 FROM node:16 as development
 WORKDIR /usr/src/app
 COPY package*.json tsconfig.json ./
@@ -110,7 +130,7 @@ CMD [ "node", "./build/index.js" ]
 {% endtab %}
 
 {% tab title="Typescript" %}
-```
+```docker
 FROM node:16 as development
 WORKDIR /usr/src/app
 COPY package*.json ./
@@ -138,7 +158,7 @@ CMD [ "node", "dist/main" ]
 {% endtab %}
 
 {% tab title="Go" %}
-```
+```docker
 FROM golang:alpine AS development
 ENV GO111MODULE=on \
     CGO_ENABLED=0
@@ -162,6 +182,26 @@ RUN apk --no-cache add ca-certificates
 WORKDIR /root/
 COPY --from=production /app/main .
 CMD ["./main"]
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```dockerfile
+# Use an official Python runtime as a parent image
+FROM python:3.9
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any needed packages
+RUN pip install --trusted-host pypi.python.org Flask
+
+# Run the command to start the Flask app
+CMD ["python", "app.py"]
+
 ```
 {% endtab %}
 {% endtabs %}
