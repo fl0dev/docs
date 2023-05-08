@@ -8,9 +8,8 @@ Follow the steps in this guide to get your app deployed on FL0.
 
 ### Prerequisites
 
-1. A FL0 account (request alpha access [here](https://fl0.com))
+1. A FL0 account
 2. Your code stored in a Github repository
-3. A Dockerfile in the root of your repository
 
 ### Listen to the right port
 
@@ -88,7 +87,23 @@ if __name__ == "__main__":
 {% endtab %}
 {% endtabs %}
 
-### Include a Dockerfile
+### Using Built-in Language Support
+
+FL0 has out-of-the-box support for many languages, which means your code will be built and deployed automatically without any special configuration required. Below is a list of supported languages:
+
+1. Java
+2. Node.js
+3. .NET Core
+4. Go
+5. Python
+6. PHP
+7. Ruby
+
+For more complex scenarios where specific **build**, **test** or **lint** steps are required, see the section below on using a **Dockerfile**.
+
+
+
+### Using a Dockerfile
 
 When building your project, FL0 runs the `docker build` command and requires a Dockerfile to be present in the root of your repository. Your Dockerfile should be configured to build and start your application. Below are some examples of multi-stage Dockerfiles with the following stages:
 
